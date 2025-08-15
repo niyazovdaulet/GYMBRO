@@ -19,7 +19,7 @@ struct GYMBROApp: App {
     var body: some Scene {
         WindowGroup {
             if authService.isAuthenticated {
-                MainTabView()
+                WelcomeTabView()
                     .environmentObject(authService)
                     .preferredColorScheme(.dark)
                     .background(Color.undergroundPrimary)
